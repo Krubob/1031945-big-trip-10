@@ -1,7 +1,7 @@
 # Личный проект «Большое путешествие» [![Build status][travis-image]][travis-url]
 
 * Студент: [Vladislav Petrov](https://up.htmlacademy.ru/ecmascript/10/user/1031945).
-* Наставник: `Неизвестно`.
+* Наставник: `Максим Каськов`.
 
 ---
 
