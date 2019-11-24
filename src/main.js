@@ -1,27 +1,26 @@
 const TASK_COUNT = 3;
 
-const createTripRouteTemplate = () => {
-  return (
-    `<div class="trip-info__main">
+/*
+* возвращает шаблон верстки маршрута
+*/
+const createTripRouteTemplate = () =>
+  `<div class="trip-info__main">
     <h1 class="trip-info__title">Amsterdam &mdash; ... &mdash; Amsterdam</h1>
 
     <p class="trip-info__dates">Mar 18&nbsp;&mdash;&nbsp;21</p>
-  </div>`
-  );
-}; // маршрут
+  </div>`;
 
-const createSiteMenuTemplate = () => {
-  return (
-    `<nav class="trip-controls__trip-tabs  trip-tabs">
+const createSiteMenuTemplate = () =>
+  `<nav class="trip-controls__trip-tabs  trip-tabs">
     <a class="trip-tabs__btn  trip-tabs__btn--active" href="#">Table</a>
     <a class="trip-tabs__btn" href="#">Stats</a>
-  </nav>`
-  );
-}; // меню
+  </nav>`;
 
-const createSiteFiltersTemplate = () => {
-  return (
-    `<form class="trip-filters" action="#" method="get">
+/*
+* возвращает шаблон верстки фильтров
+*/
+const createSiteFiltersTemplate = () =>
+  `<form class="trip-filters" action="#" method="get">
 <div class="trip-filters__filter">
   <input id="filter-everything" class="trip-filters__filter-input  visually-hidden" type="radio" name="trip-filter" value="everything" checked>
   <label class="trip-filters__filter-label" for="filter-everything">Everything</label>
@@ -38,13 +37,13 @@ const createSiteFiltersTemplate = () => {
 </div>
 
 <button class="visually-hidden" type="submit">Accept filter</button>
-</form>`
-  );
-}; // фильтры
+</form>`;
 
-const createTripSortingTemplate = () => {
-  return (
-    `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
+/*
+* возвращает шаблон верстки сортировки
+*/
+const createTripSortingTemplate = () =>
+  `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
 <span class="trip-sort__item  trip-sort__item--day">Day</span>
 
 <div class="trip-sort__item  trip-sort__item--event">
@@ -73,13 +72,13 @@ const createTripSortingTemplate = () => {
 </div>
 
 <span class="trip-sort__item  trip-sort__item--offers">Offers</span>
-</form>`
-  );
-}; // сортировка
+</form>`;
 
-const createEventEditTemplate = () => {
-  return (
-    `<form class="trip-events__item  event  event--edit" action="#" method="post">
+/*
+* возвращает шаблон верстки формы создания/редактирования/детали о маршруте
+*/
+const createEventEditTemplate = () =>
+  `<form class="trip-events__item  event  event--edit" action="#" method="post">
 <header class="event__header">
   <div class="event__type-wrapper">
     <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -253,13 +252,14 @@ const createEventEditTemplate = () => {
     </div>
   </section>
 </section>
-</form>`
-  );
-}; // форма создания/редактирования/детали о маршруте
+</form>`;
 
-const createEventCardTemplate = () => {
-  return (
-    `<form class="trip-events__item  event  event--edit" action="#" method="post">
+
+/*
+ * возвращает шаблон верстки карточки события
+ */
+const createEventCardTemplate = () =>
+  `<form class="trip-events__item  event  event--edit" action="#" method="post">
 <header class="event__header">
   <div class="event__type-wrapper">
     <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -365,13 +365,13 @@ const createEventCardTemplate = () => {
   <button class="event__save-btn  btn  btn--blue" type="submit">Save</button>
   <button class="event__reset-btn" type="reset">Cancel</button>
 </header>
-</form>`
-  );
-}; // карточка
+</form>`;
 
-const createTripDaysTemplate = () => {
-  return (
-    `<ul class="trip-days">
+/*
+* возвращает шаблон верстки списка событий по дням
+*/
+const createTripDaysTemplate = () =>
+  `<ul class="trip-days">
 <li class="trip-days__item  day">
   <div class="day__info">
     <span class="day__counter">1</span>
@@ -701,9 +701,7 @@ const createTripDaysTemplate = () => {
     </li>
   </ul>
 </li>
-</ul>`
-  );
-}; // инф. о маршруте по дням
+</ul>`;
 
 const render = (container, template, place) => {
   container.insertAdjacentHTML(place, template);
