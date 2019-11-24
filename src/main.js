@@ -21,7 +21,7 @@ const createSiteMenuTemplate = () => {
 
 const createSiteFiltersTemplate = () => {
   return (
-`<form class="trip-filters" action="#" method="get">
+    `<form class="trip-filters" action="#" method="get">
 <div class="trip-filters__filter">
   <input id="filter-everything" class="trip-filters__filter-input  visually-hidden" type="radio" name="trip-filter" value="everything" checked>
   <label class="trip-filters__filter-label" for="filter-everything">Everything</label>
@@ -44,7 +44,7 @@ const createSiteFiltersTemplate = () => {
 
 const createTripSortingTemplate = () => {
   return (
-`<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
+    `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
 <span class="trip-sort__item  trip-sort__item--day">Day</span>
 
 <div class="trip-sort__item  trip-sort__item--event">
@@ -79,7 +79,7 @@ const createTripSortingTemplate = () => {
 
 const createEventEditTemplate = () => {
   return (
-`<form class="trip-events__item  event  event--edit" action="#" method="post">
+    `<form class="trip-events__item  event  event--edit" action="#" method="post">
 <header class="event__header">
   <div class="event__type-wrapper">
     <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -255,11 +255,11 @@ const createEventEditTemplate = () => {
 </section>
 </form>`
   );
-} // форма создания/редактирования/детали о маршруте
+}; // форма создания/редактирования/детали о маршруте
 
 const createEventCardTemplate = () => {
   return (
-`<form class="trip-events__item  event  event--edit" action="#" method="post">
+    `<form class="trip-events__item  event  event--edit" action="#" method="post">
 <header class="event__header">
   <div class="event__type-wrapper">
     <label class="event__type  event__type-btn" for="event-type-toggle-1">
@@ -371,7 +371,7 @@ const createEventCardTemplate = () => {
 
 const createTripDaysTemplate = () => {
   return (
-`<ul class="trip-days">
+    `<ul class="trip-days">
 <li class="trip-days__item  day">
   <div class="day__info">
     <span class="day__counter">1</span>
