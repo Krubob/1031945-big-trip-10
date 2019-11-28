@@ -1,7 +1,7 @@
 /*
 * возвращает шаблон верстки сортировки
 */
-const createTripSortingTemplate = () =>
+const createTripAssortmentTemplate = () =>
   `<form class="trip-events__trip-sort  trip-sort" action="#" method="get">
 <span class="trip-sort__item  trip-sort__item--day">Day</span>
 
@@ -33,4 +33,4 @@ const createTripSortingTemplate = () =>
 <span class="trip-sort__item  trip-sort__item--offers">Offers</span>
 </form>`;
 
-export {createTripSortingTemplate};
+export {createTripAssortmentTemplate};

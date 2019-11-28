@@ -1,7 +1,7 @@
 import {createTripRouteTemplate} from './components/tripRouteTemplate.js';
 import {createSiteMenuTemplate} from './components/siteMenuTemplate.js';
 import {createSiteFiltersTemplate} from './components/siteFiltersTemplate.js';
-import {createTripSortingTemplate} from './components/tripSortingTemplate.js';
+import {createTripAssortmentTemplate} from './components/tripAssortmentTemplate.js';
 import {createEventEditTemplate} from './components/eventEditTemplate.js';
 import {createEventCardTemplate} from './components/eventCardTemplate.js';
 import {createTripDaysTemplate} from './components/tripDaysTemplate.js';
@@ -25,7 +25,7 @@ render(siteTripControlsElement, createSiteFiltersTemplate(), `beforeend`);
 const siteMainElement = document.querySelector(`.page-body__page-main`);
 const siteTripEventsElement = siteMainElement.querySelector(`.trip-events`);
 
-render(siteTripEventsElement, createTripSortingTemplate(), `beforeend`);
+render(siteTripEventsElement, createTripAssortmentTemplate(), `beforeend`);
 render(siteTripEventsElement, createEventEditTemplate(), `beforeend`);
 
 for (let i = 0; i < TASK_COUNT; i++) {
